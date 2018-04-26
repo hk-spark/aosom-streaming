@@ -62,7 +62,7 @@ services:
 # Telegraf - Influx
 # -------------------------------------------------------------------------
   telegraf-influx:
-    image: apstra/telegraf:himanshu
+    image: apstra/telegraf:1.5.2_AOS_2.1
     command: telegraf -debug
     env_file:
       - variables.env
