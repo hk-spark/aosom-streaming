@@ -40,6 +40,10 @@ services:
      - /etc/localtime:/etc/localtime
     environment:
      - "INFLUXDB_ADMIN_ENABLED=true"
+     - "INFLUXDB_DATA_MAX_SERIES_PER_DATABASE=0"
+     - "INFLUXDB_DATA_MAX_VALUES_PER_TAG=0"
+     - "INFLUXDB_COORDINATOR_MAX_SELECT_POINT=50000"
+     - "INFLUXDB_REPORTING_DISABLED=true"
     ports:
      - "8083:8083"
      - "8086:8086"
